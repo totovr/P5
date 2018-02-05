@@ -1,6 +1,6 @@
-# esp32
+# P5
 
-esp32 programs for different applications
+p5.js a JS client-side library for creating graphic and interactive experiences, based on the core principles of Processing.
 
 ## Getting Started
 
@@ -8,20 +8,27 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
+* Processing
 * [Atom](https://atom.io/)
-* esp32 Dev Board
 * A computer with OSX, Windows, Linux
 
-### Installing
+### Fast Installing
 
-* Install the last stable version of PlataformIO, you can download the package with the manager package of Atom
-* Open PlataformIO
-* Create a new project or migrate one of Arduino
-* Select esp32 Dev board
+* Open Processing
+* In the left corner select **Add mode**
+* Install p5.js mode
+
+### Using with Atom
+
+* Install [node](https://nodejs.org/es/)
+* Open Atom -> pack manager -> install new package -> script
+* Download the [ExamplecreateCanvas](https://github.com/totovr/P5/tree/master/ExamplecreateCanvas)
+* Open it in Atom
+* Press cmd + i (for MacOs users)
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/totovr/Processing/blob/master/CONTRIBUTING.md) for details of the code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/totovr/P5/blob/master/CONTRIBUTING.md) for details of the code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
@@ -36,4 +43,4 @@ Antonio Vega Ramirez:
 
 ## License
 
-This project is licensed under The MIT License (MIT) - see the [LICENSE.md](https://github.com/totovr/Arduino/blob/master/LICENSE.md) file for details
+This project is licensed under The MIT License (MIT) - see the [LICENSE.md](https://github.com/totovr/P5/blob/master/LICENSE) file for details
