@@ -1,8 +1,8 @@
 function setup() {
-  createCanvas(480,120);
+  createCanvas(480,120,WEBGL);
 }
 
 function draw() {
-  background(204);
-  point(240,260);
+  background(200);
+  sphere(40);
 }
