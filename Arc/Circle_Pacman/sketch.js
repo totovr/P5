@@ -4,7 +4,7 @@ function setup() {
 
 function draw() {
   background(200)
-  arc(400, 300, 100, 100, 0, PI+HALF_PI)
+  arc(400, 300, 100, 100, 0, TWO_PI)
 }
 
 //The first and second parameters set the location, while the third and fourth
