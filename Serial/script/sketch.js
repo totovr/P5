@@ -2,7 +2,7 @@ var serial;                            // variable to hold an instance of the se
 var options = { baudrate: 9600};      // set baudrate to 9600; must match Arduino baudrate
 var portName = '/dev/cu.usbmodem1411'; // fill in your serial port name here
 var inData;                            // for incoming serial data
-var slider;
+
 function setup() {
   createCanvas(400, 300);          // make the canvas
   serial = new p5.SerialPort();    // make a new instance of the serialport library
