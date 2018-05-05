@@ -1,16 +1,15 @@
 var serial;                            // variable to hold an instance of the serialport library
-var options = { baudrate: 9600};      // set baudrate to 9600; must match Arduino baudrate
-var portName = '/dev/cu.usbmodem1411'; // fill in your serial port name here
-var inData;                            // for incoming serial data
+//var options = { baudrate: 9600};      // set baudrate to 9600; must match Arduino baudrate
+var portName = '/dev/cu.usbmodemFD121'; // fill in your serial port name here
+var inData;
+var message;                    // for incoming serial data
 
 function setup() {
   createCanvas(400, 300);          // make the canvas
   serial = new p5.SerialPort();    // make a new instance of the serialport library
   serial.on('data', serialEvent);  // callback for when new data arrives
   serial.on('error', serialError); // callback for errors
-  serial.open(portName, options);           // open a serial port @ 9600
-
-
+  serial.open(portName);           // open a serial port @ 9600
 }
 
 function draw() {
@@ -26,7 +25,7 @@ function draw() {
   background(0);
   }
 
-  text("sensor value: " + inData, 30, 30);
+  text("sensor value: " + message, 30, 30);
   text("background value: " + mappedBackground, 30, 50);
 }
 
@@ -41,6 +40,7 @@ function serialEvent() {
   if (inString.length > 0 ) {
     // convert it to a number:
     inData = Number(inString);
+    message = inString;
   }
 }
 
