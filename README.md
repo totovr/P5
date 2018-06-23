@@ -22,7 +22,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 * Install [node](https://nodejs.org/es/)
 * Open Atom -> pack manager -> install new package -> script
-* Download the [ExamplecreateCanvas](https://github.com/totovr/P5/tree/master/ExamplecreateCanvas)
+* Download this [template](https://gitlab.com/totovr/p5.js/tree/master/template)
 * Open it in Atom
 * Press cmd + i (for MacOs users)
 
